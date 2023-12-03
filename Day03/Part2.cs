@@ -89,7 +89,7 @@ internal class Part2
         }
         else
         {
-            Console.WriteLine("Line: {0}, Index: {1}, Gears: {2}, {3}", lineNumber, index, results[0], results[1]);
+            // Console.WriteLine("Line: {0}, Index: {1}, Gears: {2}, {3}", lineNumber, index, results[0], results[1]);
             return results[0] * results[1];
         }
 

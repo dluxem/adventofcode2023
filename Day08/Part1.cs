@@ -29,8 +29,9 @@ internal class Part1
         }
 
         long steps = 0;
-        var currentPlace = map.First().Key;
-        var currentNodes = map.First().Value;
+        var currentPlace = "AAA";
+        var currentNodes = map[currentPlace];
+        var loopDetection = new List<string>();
         while (true)
         {
             //Console.Write(currentPlace.Key);
@@ -47,10 +48,7 @@ internal class Part1
             }
             currentNodes = map[currentPlace];
             steps++;
-            if (steps % 1000000 ==0 )
-            {
-                Console.WriteLine(steps.ToString() + " " + currentPlace);
-            }
+
         }
 
 
